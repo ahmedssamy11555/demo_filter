@@ -42,7 +42,7 @@ const SidePanel = ({ close, show }) => {
           <MdClose onClick={close} />
         </Top>
         {loading ? (
-          "Loading"
+          <Starter>Loading..</Starter>
         ) : Error ? (
           "error"
         ) : cityData ? (
